@@ -31,7 +31,7 @@ h1 {
 #question {
   color: #f4f0fc;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-bottom: 1px solid grey;
 }
 
@@ -54,6 +54,7 @@ h1 {
 .btn:hover {
   background-color: #ffffff;
   color: black;
+  cursor: pointer;
 }
 
 #footer {

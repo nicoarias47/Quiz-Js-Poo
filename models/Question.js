@@ -1,4 +1,4 @@
-export class Question {
+class Question {
   /**
    *
    * @param {string} text   texto de la pregunta
@@ -16,7 +16,9 @@ export class Question {
    * @param {string} choice Algun text para adivinar
    * @returns {boolean} return true si choice es igual a answer
    */
-  currentAnswer(choice) {
+  correctAnswer(choice) {
     return choice === this.answer;
   }
 }
+
+export { Question };

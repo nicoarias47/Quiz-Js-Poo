@@ -1,16 +1,38 @@
+// @ts-check
+
+import { Question } from "./Question.js";
+
 export class Quiz {
-  questionsIndex = 0;
   score = 0;
+  questionIndex = 0;
 
+  /**
+   *
+   * @param {Question[]} questions
+   */
   constructor(questions) {
-    this.choices = choices;
+    this.questions = questions;
   }
-
+  /**
+   *
+   * @returns {Question} Pregunta encontrada
+   */
   getQuestionIndex() {
-    return this.questions[this.questionsIndex];
+    return this.questions[this.questionIndex];
   }
 
-  guess(aswer) {
-    if (this.getQuestionIndex().correct) this.questionsIndex++;
+  /**
+   *
+   * @param {string} answer espera respuesta correcta
+   */
+  guess(answer) {
+    if (this.getQuestionIndex().correctAnswer(answer)) {
+      this.score++;
+    }
+    this.questionIndex++;
+  }
+
+  isEnded() {
+    return this.questions.length === this.questionIndex;
   }
 }

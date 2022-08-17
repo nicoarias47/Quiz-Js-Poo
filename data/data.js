@@ -6,12 +6,12 @@ export const data = [
   },
   {
     question: "bbbbbbbbbbbbbbbbb ?",
-    choices: ["aaaa", "bbbb", "cccc", "ddddd"],
+    choices: ["aaaa", "bbbb", "cc", "ddddd"],
     answer: "bbbb",
   },
   {
     question: "aaaaaaaaaaaaaaaaaaaaa ?",
-    choices: ["aaaa", "bbbbb", "cccc", "ddddd"],
+    choices: ["aaaa", "bbbbb", "ccccccccc", "ddddd"],
     answer: "aaaa",
   },
 ];

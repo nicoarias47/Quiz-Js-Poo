@@ -12,6 +12,7 @@ const renderPage = (quiz, ui) => {
       quiz.guess(currentChoice);
       renderPage(quiz, ui);
     });
+    ui.showProgress(quiz.questionIndex +1, quiz.questions.length)
   }
 };
 

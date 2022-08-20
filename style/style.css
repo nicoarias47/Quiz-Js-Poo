@@ -19,6 +19,7 @@ main {
 #quiz {
   background-color: #301e4e;
   padding: 4rem;
+  max-width: 600px;
 }
 
 h1 {
@@ -61,4 +62,26 @@ h1 {
   color: #ff6e6c;
   font-size: 1.2rem;
   padding-top: 2rem;
+}
+
+.score {
+  color: #f4f0fc;
+}
+
+@media (max-width: 768px) {
+  #quiz {
+    max-width: 500px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  #quiz {
+    max-width: 400px;
+  }
+
+  #choices {
+    padding: 0rem;
+  }
+
 }
